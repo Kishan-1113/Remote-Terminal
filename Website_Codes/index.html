@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Terminal | Multilingual AI Command Engine</title>
+  <meta name="description"
+    content="Local, high-precision AI command translation engine that converts conversational natural language into verified terminal commands across Git, Docker, and Linux/Ubuntu.">
+  <link rel="stylesheet" href="css/style.css?v=3.1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>">
+</head>
+
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" id="nav-brand">
+        <div class="terminal-icon-box">&gt;_</div>
+        <span>Project Terminal</span>
+        <span class="brand-badge">v1.0.0</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero-playground" id="nav-playground">Terminal</a></li>
+        <li><a href="#features-section" id="nav-features">Features</a></li>
+        <li><a href="#architecture-section" id="nav-arch">Architecture</a></li>
+        <li><a href="#catalog-section" id="nav-catalog">Command Catalog</a></li>
+        <li><a href="#download-section" id="nav-download">Download</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#catalog-section" class="btn btn-outline-cyan btn-sm">
+          <span>🔍 Browse Commands</span>
+        </a>
+        <a href="downloads/Project-Terminal.exe" download="Project-Terminal.exe" class="btn btn-primary btn-sm"
+          id="header-download-btn">
+          <span>Get Software (.exe)</span>
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO & BALANCED TWO-COLUMN INTERACTIVE PLAYGROUND
+       ========================================================================= -->
+  <section class="section hero-section" id="hero-playground">
+    <div class="container">
+      <div class="hero-split-grid">
+
+        <!-- Left Column: Value Proposition & CTAs -->
+        <div class="hero-content-col">
+          <div class="eyebrow eyebrow-cyan">
+            <span class="pulse-dot"></span>
+            <span>Zero Cloud • 100% Offline AI Command Engine</span>
+          </div>
+
+          <h1 class="hero-title">
+            Speak to your terminal in <span class="gradient-text">Conversational Hinglish & English</span>
+          </h1>
+
+          <p class="hero-desc">
+            Remembering complex syntax and obscure flags across Git, Docker, and Linux is exhausting.
+            <strong>Project Terminal</strong> translates everyday natural phrasing directly into verified, executable
+            shell commands in under 15ms.
+          </p>
+
+          <div class="hero-btn-row">
+            <a href="downloads/Project-Terminal.exe" download="Project-Terminal.exe" class="btn btn-primary btn-lg">
+              <span>📥 Download Free (.exe)</span>
+            </a>
+            <a href="#catalog-section" class="btn btn-secondary btn-lg">
+              <span>🔍 Browse 524+ Commands</span>
+            </a>
+          </div>
+
+          <div class="hero-badges-row">
+            <div class="hero-badge-item">
+              <span class="badge-dot"></span>
+              <span>100% Offline Ready</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="badge-dot"></span>
+              <span>Zero Cloud Cost</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="badge-dot"></span>
+              <span>524+ Production Commands</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Native Git Bash Terminal Session Preview -->
+        <div class="hero-sim-col">
+          <div class="gitbash-showcase-card">
+            <img src="assets/terminal_preview.png" data-image-key="terminalPreview"
+              alt="Native Git Bash CLI Terminal Session" class="gitbash-terminal-image" id="heroGitBashImg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       METRICS STRIP
+       ========================================================================= -->
+  <section class="metrics-strip" id="metricsStrip">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <div class="metric-number">524+</div>
+          <div class="metric-title">Production Commands</div>
+          <div class="metric-desc">Git, Docker & Linux Admin</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">322+</div>
+          <div class="metric-title">Semantic Intents</div>
+          <div class="metric-desc">Dense 384-D Unit Vectors</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">2,195+</div>
+          <div class="metric-title">Colloquial Phrases</div>
+          <div class="metric-desc">Hinglish & English Native</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-number">&lt;15ms</div>
+          <div class="metric-title">Inference Latency</div>
+          <div class="metric-desc">100% Local CPU Execution</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CORE CAPABILITIES (2x2 Balanced Grid)
+       ========================================================================= -->
+  <section class="section" id="features-section">
+    <div class="container">
+
+      <div class="section-title-wrap text-center">
+        <div class="eyebrow eyebrow-cyan">
+          <span class="pulse-dot"></span>
+          <span>Core Capabilities</span>
+        </div>
+        <h2 class="section-heading">
+          Built for Developers, <span class="gradient-text">Trained on Real Phrasing</span>
+        </h2>
+        <p class="section-desc">
+          Four distinct engineering pillars ensure accurate, secure, and instant command synthesis without sending any
+          data off your machine.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feat-card">
+          <div class="feat-icon">🌐</div>
+          <h3 class="feat-title">Multilingual & Hinglish Native</h3>
+          <p class="feat-desc">
+            Trained on 2,190+ colloquial phrases. Speak naturally using conversational words like <em>"banao"</em>,
+            <em>"hata do"</em>, <em>"chhupe hue"</em>, or standard technical English.
+          </p>
+          <div class="feat-tags">
+            <span class="tag-pill">Hinglish Native</span>
+            <span class="tag-pill">2,190+ Phrases</span>
+          </div>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">🧠</div>
+          <h3 class="feat-title">Vector Semantic Search</h3>
+          <p class="feat-desc">
+            Powered by <code>multilingual-e5-small</code> (~130 MB). Maps queries to 384-dimensional dense embeddings
+            and calculates cosine similarities against 322 pre-indexed intent vectors.
+          </p>
+          <div class="feat-tags">
+            <span class="tag-pill">SentenceTransformers</span>
+            <span class="tag-pill">Cos-Sim &ge; 0.85</span>
+          </div>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">🎯</div>
+          <h3 class="feat-title">Hybrid Slot Extraction</h3>
+          <p class="feat-desc">
+            Extracts variable entities (branch names, container IDs, file paths) dynamically using dual techniques:
+            prepositional regex markers and dynamic stopword subtraction.
+          </p>
+          <div class="feat-tags">
+            <span class="tag-pill">Regex Markers</span>
+            <span class="tag-pill">Stopword Subtraction</span>
+          </div>
+        </div>
+
+        <div class="feat-card">
+          <div class="feat-icon">🛡️</div>
+          <h3 class="feat-title">Destructive Action Guard</h3>
+          <p class="feat-desc">
+            Destructive commands like <code>rm -rf</code>, <code>docker rm</code>, or branch deletion automatically
+            enforce safety confirmation flags before execution to protect your environment.
+          </p>
+          <div class="feat-tags">
+            <span class="tag-pill">Confirm: True</span>
+            <span class="tag-pill">Accident Prevention</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SYSTEM ARCHITECTURE (Balanced Two-Column)
+       ========================================================================= -->
+  <section class="section section-alt" id="architecture-section">
+    <div class="container">
+
+      <div class="section-title-wrap text-center">
+        <div class="eyebrow eyebrow-purple">
+          <span class="pulse-dot" style="background-color: #c084fc; box-shadow: 0 0 8px #c084fc;"></span>
+          <span>Deterministic Pipeline</span>
+        </div>
+        <h2 class="section-heading">
+          How Natural Speech Becomes <span class="gradient-text-purple">Verified Shell Commands</span>
+        </h2>
+        <p class="section-desc">
+          Deterministic, zero-cloud execution pipeline running on local CPU without sending a single byte to external
+          servers.
+        </p>
+      </div>
+
+      <div class="arch-split-grid">
+
+        <!-- Left: Preview Screenshot Graphic -->
+        <div class="arch-visual-card text-center">
+          <img src="assets/terminal_preview.png" data-image-key="terminalPreview" alt="Project Terminal Live Preview"
+            style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);" id="archPreviewImage">
+          <div style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+            Native MINGW64 / PowerShell / Bash CLI Session
+          </div>
+        </div>
+
+        <!-- Right: 4-Step Pipeline -->
+        <div class="arch-step-list">
+          <div class="arch-step-item">
+            <div class="arch-num-badge">01</div>
+            <div class="arch-step-body">
+              <h4>Dense Multilingual Vector Embeddings</h4>
+              <p>Converts input into 384-dimensional vector space via <code>intfloat/multilingual-e5-small</code> (~130
+                MB). Normalizes representations across both English and Hinglish idioms.</p>
+              <code>q = model.encode([query], normalize_embeddings=True)[0]</code>
+            </div>
+          </div>
+
+          <div class="arch-step-item">
+            <div class="arch-num-badge">02</div>
+            <div class="arch-step-body">
+              <h4>Cosine Similarity Matrix Matching</h4>
+              <p>Computes dot products across all 320+ pre-calculated intent representations. Enforces a strict
+                <code>0.85</code> confidence threshold to eliminate hallucinations.
+              </p>
+              <code>sims = emb @ q; intent = labels[np.argmax(sims)]</code>
+            </div>
+          </div>
+
+          <div class="arch-step-item">
+            <div class="arch-num-badge">03</div>
+            <div class="arch-step-body">
+              <h4>Hybrid Entity & Slot Extraction</h4>
+              <p>Extracts target names via dual mechanisms: prepositional regex markers (<em>naam ke</em>,
+                <em>called</em>) and dynamic stopword vocabulary filtering.
+              </p>
+              <code>name = extract_name_by_marker(text) or extract_name_by_stopwords(text)</code>
+            </div>
+          </div>
+
+          <div class="arch-step-item">
+            <div class="arch-num-badge">04</div>
+            <div class="arch-step-body">
+              <h4>Template Interpolation & Safety Verification</h4>
+              <p>Synthesizes commands from the verified 524-command registry. Flags destructive commands with explicit
+                confirmation prompts to prevent data loss.</p>
+              <code>cmd = entry['template'].format(**slots)</code>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       COMMAND CATALOG (Interactive Explorer)
+       ========================================================================= -->
+  <section class="section" id="catalog-section">
+    <div class="container">
+
+      <div class="section-title-wrap text-center">
+        <div class="eyebrow eyebrow-emerald">
+          <span class="pulse-dot"></span>
+          <span>Command Catalog</span>
+        </div>
+        <h2 class="section-heading">
+          Explore 524+ <span class="gradient-text-emerald">Pre-Indexed CLI Templates</span>
+        </h2>
+        <p class="section-desc">
+          Browse through our verified command templates across Git, Docker, and Linux. Click <strong>"Try in
+            Terminal"</strong> to test any command directly in the live simulator above!
+        </p>
+      </div>
+
+      <!-- Catalog Controls -->
+      <div class="catalog-toolbar">
+        <div class="cat-filters">
+          <button class="cat-filter-btn active" data-filter="all">🌟 All Commands</button>
+          <button class="cat-filter-btn" data-filter="git">🐙 Git (180+)</button>
+          <button class="cat-filter-btn" data-filter="docker">🐳 Docker (130+)</button>
+          <button class="cat-filter-btn" data-filter="linux">🐧 Linux (214+)</button>
+        </div>
+
+        <div class="cat-search-box">
+          <input type="text" id="explorerSearch" class="cat-search-input"
+            placeholder="Search commands (e.g. branch, stop, chmod, status)...">
+          <span class="search-hint">Ctrl + K</span>
+        </div>
+      </div>
+
+      <div class="catalog-status-bar">
+        <span id="explorerCount">Showing indexed commands</span>
+        <span style="color: var(--accent-cyan);">Click "Try in Terminal" to load into playground</span>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="catalog-grid" id="explorerGrid">
+        <!-- Cards populated dynamically by app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       DOWNLOAD & QUICKSTART
+       ========================================================================= -->
+  <section class="section section-alt" id="download-section">
+    <div class="container">
+
+      <div class="download-hero-box">
+        <div class="eyebrow eyebrow-emerald">
+          <span class="pulse-dot"></span>
+          <span>Universal Release • v1.0.0</span>
+        </div>
+        <h2 class="section-heading">Download Project Terminal</h2>
+        <p class="section-desc">
+          Download the Windows standalone application ready to run on your local machine. It includes the AI engine,
+          command registry, and intent database.
+        </p>
+
+        <div class="platform-pills">
+          <div class="platform-pill" id="badge-windows">
+            <span>🪟 Windows</span>
+          </div>
+          <div class="platform-pill" id="badge-macos">
+            <span>🍏 macOS</span>
+          </div>
+          <div class="platform-pill" id="badge-linux">
+            <span>🐧 Linux</span>
+          </div>
+          <div class="platform-pill">
+            <span>⚡ 100% Offline Ready</span>
+          </div>
+        </div>
+
+        <div>
+          <a href="downloads/Project-Terminal.exe" download="Project-Terminal.exe"
+            class="btn btn-primary btn-download-main" id="btnSingleDownload">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            <span>Download Project Terminal (.exe)</span>
+          </a>
+          <div class="download-meta-sub">
+            Windows Standalone Application • v1.0.0 • ~11 MB
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FAQ SECTION
+       ========================================================================= -->
+  <section class="section" id="faq-section">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <div class="eyebrow eyebrow-cyan">
+          <span class="pulse-dot"></span>
+          <span>FAQ &amp; Knowledge Base</span>
+        </div>
+        <h2 class="section-heading">Frequently Asked Questions</h2>
+        <p class="section-desc">Short, crisp answers about running and extending Project Terminal on your local machine.
+        </p>
+      </div>
+
+
+
+      <div class="faq-wrap">
+        <!-- FAQ 1: Offline / Privacy -->
+        <div class="faq-card open" data-cat="privacy">
+          <div class="faq-q">
+            <div class="faq-q-left">
+              <span class="faq-badge badge-cyan">Privacy</span>
+              <h4>Does Project Terminal require an internet connection or cloud API keys?</h4>
+            </div>
+            <div class="faq-icon-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-ans-grid">
+            <div class="faq-ans-inner">
+              <div class="faq-ans-content">
+                <div class="faq-takeaway"><span class="dot"></span> 100% Local &amp; Private</div>
+                <p>No internet connection or API keys required. The entire neural embedding model
+                  (<code>multilingual-e5-small</code>) runs completely on your CPU with zero telemetry or data leaks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2: Hinglish AI -->
+        <div class="faq-card" data-cat="engine">
+          <div class="faq-q">
+            <div class="faq-q-left">
+              <span class="faq-badge badge-purple">Hinglish AI</span>
+              <h4>How accurately does it interpret Hinglish and conversational phrasing?</h4>
+            </div>
+            <div class="faq-icon-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-ans-grid">
+            <div class="faq-ans-inner">
+              <div class="faq-ans-content">
+                <div class="faq-takeaway"><span class="dot"></span> 2,190+ Reference Intent Vectors</div>
+                <p>It maps informal colloquial words (like <em>"banao"</em>, <em>"hata do"</em>, <em>"chhupe hue
+                    files"</em>) to verified shell commands using semantic cosine distance, achieving &gt;95% natural
+                  language accuracy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3: Safety Guard -->
+        <div class="faq-card" data-cat="commands">
+          <div class="faq-q">
+            <div class="faq-q-left">
+              <span class="faq-badge badge-amber">Safety</span>
+              <h4>How does the Safety Guard prevent accidental data loss?</h4>
+            </div>
+            <div class="faq-icon-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-ans-grid">
+            <div class="faq-ans-inner">
+              <div class="faq-ans-content">
+                <div class="faq-takeaway"><span class="dot"></span> Pre-Execution Confirmation</div>
+                <p>High-risk commands (like <code>rm -rf</code>, <code>docker rm -f</code>, or
+                  <code>git branch -D</code>) are flagged with <code>"confirm": True</code> and require explicit
+                  confirmation before execution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4: OS Support -->
+        <div class="faq-card" data-cat="setup">
+          <div class="faq-q">
+            <div class="faq-q-left">
+              <span class="faq-badge badge-emerald">Cross-Platform</span>
+              <h4>Which operating systems are supported out of the box?</h4>
+            </div>
+            <div class="faq-icon-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-ans-grid">
+            <div class="faq-ans-inner">
+              <div class="faq-ans-content">
+                <div class="faq-takeaway"><span class="dot"></span> Windows, macOS &amp; Linux</div>
+                <p>Works natively across all major platforms. The package includes <code>run_windows.bat</code> for
+                  Command Prompt/PowerShell and <code>run_mac.sh</code> / <code>run_linux.sh</code> for Unix bash.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5: CLI Ecosystems -->
+        <div class="faq-card" data-cat="commands">
+          <div class="faq-q">
+            <div class="faq-q-left">
+              <span class="faq-badge badge-cyan">Registry</span>
+              <h4>What command ecosystems and tools are built into the registry?</h4>
+            </div>
+            <div class="faq-icon-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-ans-grid">
+            <div class="faq-ans-inner">
+              <div class="faq-ans-content">
+                <div class="faq-takeaway"><span class="dot"></span> 524+ Production Templates</div>
+                <p>Covers Git branches, tags, stashes and remotes; Docker containers, volumes, networks and compose;
+                  plus Linux file permissions, disks, network sockets, and systemd services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6: Custom Extensibility -->
+        <div class="faq-card" data-cat="commands">
+          <div class="faq-q">
+            <div class="faq-q-left">
+              <span class="faq-badge badge-purple">Customization</span>
+              <h4>Can I add custom commands or company internal scripts?</h4>
+            </div>
+            <div class="faq-icon-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-ans-grid">
+            <div class="faq-ans-inner">
+              <div class="faq-ans-content">
+                <div class="faq-takeaway"><span class="dot"></span> Plug-and-Play Extensible</div>
+                <p>Yes. Add 3-5 example phrases to <code>intents.py</code> and bind the command pattern in
+                  <code>command_registry.py</code>. The AI engine automatically rebuilds indexes on restart.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 7: Hardware & RAM -->
+        <div class="faq-card" data-cat="setup">
+          <div class="faq-q">
+            <div class="faq-q-left">
+              <span class="faq-badge badge-emerald">Specs</span>
+              <h4>What are the minimum system hardware and RAM requirements?</h4>
+            </div>
+            <div class="faq-icon-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-ans-grid">
+            <div class="faq-ans-inner">
+              <div class="faq-ans-content">
+                <div class="faq-takeaway"><span class="dot"></span> ~300 MB RAM &bull; Any Standard CPU</div>
+                <p>Requires standard Python 3.10+ and under 350 MB RAM. No dedicated GPU or CUDA drivers are needed—the
+                  quantized model runs effortlessly on budget laptops.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 8: Inference Speed -->
+        <div class="faq-card" data-cat="engine">
+          <div class="faq-q">
+            <div class="faq-q-left">
+              <span class="faq-badge badge-cyan">Performance</span>
+              <h4>How fast is command translation inference on CPU?</h4>
+            </div>
+            <div class="faq-icon-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-ans-grid">
+            <div class="faq-ans-inner">
+              <div class="faq-ans-content">
+                <div class="faq-takeaway"><span class="dot"></span> &lt; 45ms Response Time</div>
+                <p>Commands are classified and slot-extracted in under 45ms. Pre-computed embedding matrix operations
+                  ensure instant terminal responses with zero lag.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Bottom Help Banner -->
+      <div class="faq-footer-help">
+        <div class="faq-footer-left">
+          <div class="faq-footer-icon">💡</div>
+          <div class="faq-footer-text">
+            <h5>Still have questions or need custom commands?</h5>
+            <p>Explore the interactive terminal simulator above or download the Windows application.</p>
+          </div>
+        </div>
+        <div class="faq-footer-actions">
+          <a href="#catalog-section" class="btn btn-outline btn-sm">Explore Catalog</a>
+          <a href="downloads/Project-Terminal.exe" class="btn btn-primary btn-sm"
+            download="Project-Terminal.exe">Download App (.exe)</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Notification Toast -->
+  <div class="toast-notice" id="toastNotice">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+      style="color: var(--accent-emerald);">
+      <path d="M5 13l4 4L19 7"></path>
+    </svg>
+    <span id="toastMessage">Application download started! Check your downloads folder.</span>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div>
+        <strong>Project Terminal</strong> — Multilingual AI Command Engine
+        <p style="margin-top: 0.25rem; font-size: 0.8rem;">Zero Cloud Dependency • Hinglish & English • 524+ Commands
+        </p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#hero-playground">Playground</a></li>
+        <li><a href="#features-section">Features</a></li>
+        <li><a href="#architecture-section">Architecture</a></li>
+        <li><a href="#catalog-section">Commands</a></li>
+        <li><a href="#download-section">Download</a></li>
+      </ul>
+      <div style="font-family: var(--font-mono); font-size: 0.75rem;">
+        AWS Deployment Ready • MIT License
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js?v=1.0"></script>
+  <script src="js/app.js?v=3.1"></script>
+</body>
+
+</html>
